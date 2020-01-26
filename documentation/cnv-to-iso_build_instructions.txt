@@ -14,4 +14,6 @@ Compiling this program for windows command line (CMD) usage:
 
 Check source on windows with cygwin.
   splint cnv_csv_to_iso.c -unrecog  -nullpass -compdef -bufferoverflowhigh
-  Gives several warnings. No serious error at first inspection.
+
+  Gives several warnings. None serious at first inspection of the output.
+
