@@ -8,4 +8,4 @@ Compiling this program for windows command line (CMD) usage:
     gcc -o cnv_csv_to_iso.exe cnv_csv_to_iso.c
 Check source on windows with cygwin.
   splint cnv_csv_to_iso.c -unrecog  -nullpass -compdef -bufferoverflowhigh
-  Gives several warnings. None serious at first inspection.
+  Gives several warnings. None serious at first inspection of the output.
