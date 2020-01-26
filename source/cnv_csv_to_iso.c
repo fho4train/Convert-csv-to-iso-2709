@@ -328,7 +328,7 @@ int main( int argc, char *argv[] )
     if ( CMDOPTS <= 0 ) {
         fprintf(stderr, "-S: HTML brackets (<>) give a warning\n");
     } else {
-        fprintf(stderr, "-S: HTML brackets (<>) are replaced by double angle quotation marks (��)\n");
+        fprintf(stderr, "-S: HTML brackets (<>) are replaced by double angle quotation marks («»)\n");
     }
 
     /*
@@ -501,7 +501,7 @@ int q00ProcessCSV( char *csvfile, struct FDT fdtlines[], int numfdtlines, char *
             fprintf(stderr, "Check first line of %s for correct tags ...\n", csvfile);
             firstline = strdup( record );
             /*
-            ** Remove a possible BOM from the first token (UTF-8 BOM is printed as ﻿)
+            ** Remove a possible BOM from the first token (UTF-8 BOM is printed as ï»¿)
             ** The UTF-8 representation of the BOM is the (hex) byte sequence 0xEF,0xBB,0xBF
             */
             if ( *firstline == '\xef' && *(firstline+1) == '\xbb' && *(firstline+2) == '\xbf') {
@@ -1225,12 +1225,12 @@ int q00ReplaceChars( char *record, int recordnumber )
         if ( testc == '<' ) {
             numlt++;
             if ( CMDOPTS > 0 ) {
-                record[i] = '�';
+                record[i] = '«';
             }
         } else if ( testc == '>' ) {
             numgt++;
             if ( CMDOPTS > 0 ) {
-                record[i] = '�';
+                record[i] = '»';
             }
         }
     }
