@@ -1,11 +1,19 @@
 Compile this program for linux or windows with cygwin (bash) with the gcc compiler:
   gcc -o cnv_csv_to_iso cnv_csv_to_iso.c
   This program will produce files with LF
+
 Compiling this program for windows command line (CMD) usage:
-  By cygwin. Creates a staticly linked executable, produce files with CRLF:
+
+  By cygwin.
+  Creates a staticly linked executable, produce files with CRLF:
     i686-w64-mingw32-gcc -o cnv_csv_to_iso.exe cnv_csv_to_iso.c
-  By MinGW. Creates a staticly linked executable, produce files with CRLF:
+
+  By MinGW.
+  Creates a staticly linked executable, produce files with CRLF:
     gcc -o cnv_csv_to_iso.exe cnv_csv_to_iso.c
+
 Check source on windows with cygwin.
   splint cnv_csv_to_iso.c -unrecog  -nullpass -compdef -bufferoverflowhigh
+
   Gives several warnings. None serious at first inspection of the output.
+
