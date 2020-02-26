@@ -19,4 +19,5 @@ Check source on windows with cygwin.
 This last text is added as test for the github sw
 And now the procedure should go correct
 and this the thisrd line directly in the master
+and line four
 added line4
