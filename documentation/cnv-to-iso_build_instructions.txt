@@ -17,3 +17,4 @@ Check source on windows with cygwin.
   Gives several warnings. None serious at first inspection of the output code.
 
 This last text is added as test for the github sw
+And now the procedure should go correct
